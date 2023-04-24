@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+<body style = "background-image : url({% static 'images/web.jpg' %}) ; background-repeat: no-repeat;">
+    {% block content %}
+    {% endblock content %}
+
+    {% include "scripts.html" %}
+   
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+{% load static %}
+<head>
+    <meta name="description" content="QR Code scanner" />
+    <meta name="keywords" content="qrcode,qr code,scanner,barcode,javascript" />
+    <meta name="language" content="English" />
+    <meta name="Revisit-After" content="1 Days" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web QR</title>
+
+    <style type="text/css">
+       
+        #v {
+            width: 320px;
+            height: 240px;
+        }
+
+        #qr-canvas {
+            display: none;
+        }
+
+        #qrfile {
+            width: 320px;
+            height: 240px;
+        }
+
+        #outdiv {
+            width: 320px;
+            height: 240px;
+            border: solid;
+            border-width: 3px 3px 3px 3px;
+        }
+body{
+		
+		width: 100%;
+        text-align: center;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+        color: white;
+	}
+
+	
+		
+	input{
+		border: none;
+	}
+	#msg2{
+		
+		font-weight: bold;
+	}
+	
+	#outdiv{
+		margin-top: 50px;
+		height: 300px;
+		background-color: #ffffff;
+		
+		border: 1px solid silver;
+		border-radius: 5px;
+	}
+	
+	
+
+	
+	@media (max-width: 400px){
+		#scanner{
+	    margin-left:50px;
+		margin-right:50px;
+		height:210px;
+		}
+		#outdiv{
+			height: 240px;
+			width: 320px;
+			
+		}
+		
+		.start{
+		height: 50px;
+		position:absolute;
+		left: 43.75%;
+		top: 130px;
+		z-index: 99999;
+		opacity: 50%;
+	}
+	}
+	
+	@media (min-width: 400px) and (max-width: 861px){
+	.start{
+		height: 50px;
+		position:absolute;
+		left: 44%;
+		top: 130px;
+		z-index: 99999;
+		opacity: 50%;
+	}	
+	#outdiv{
+			height: 240px;
+			width: 320px;
+			
+	}
+	}  
+	@media (min-width: 861px) {
+	.start{
+		height: 50px;
+		position:absolute;
+		left: 48%;
+		top: 130px;
+		z-index: 99999;
+		opacity: 50%;
+	}	
+	#outdiv{
+			height: 240px;
+			width: 320px;
+			
+	}
+	}  
+
+    </style>
+<script type="text/javascript" src="{% static 'scripts/jquery-3.6.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/llqrcode.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/webqr.js' %}"></script>
+
+</head>

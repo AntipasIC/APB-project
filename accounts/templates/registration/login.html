@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<head>
+      <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+   </head>
+   <body>
+       <img class="wave" src="{% static 'images/lunch.png' %}">
+       <div class = "container"><div class="img">
+           <img src=""> </div><div class="login-container">
+               <form class="login form" method="POST" name="form" onsubmit="return validated()">
+                  {% csrf_token %}
+                  <img class="avatar" src="{% static 'images/avatar.png' %}">
+                  <h2>Welcome</h2>
+                  <div class="input-div one ">
+                      <div class="i">
+                          <i class="fas fa-user"></i>
+                      </div>
+                      <div>
+                          <h5>NumberPlate</h5>
+                          <input autocomplete="off" class="input"  type="text" name="username" pattern="[a-zA-Z0-9 ]+">
+                      </div>
+                  </div>
+                  <div class="UsernameError" id="username_error">Please fill up your username</div>
+                    <div class="input-div two">
+              <div class="i">
+                  <i class="fas fa-user"></i>
+              </div>
+              <div>
+              <h5>password</h5>
+              <input class="input" type="password" name="password">
+              </div>     
+           </div>
+           <div class="PasswordError" id="password_error">Please fill up your Password</div>
+           <a href="#">Forgot Password?</a>
+           <button tpye ="submit" class="btn" >LOGIN</button>
+           <a href="{% url 'register' %}">don't have an account?</a>
+
+ 
+               <p id = "messages">{{msg}}</p>
+     
+          </form>
+          </div>
+          </div>
+  
+          <script src="{% static 'scripts/script.js' %}"></script>
+      </body>
+{% endblock content %}

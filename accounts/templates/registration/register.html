@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+ </head>
+ <body>
+     <img class="wave" src="{% static 'images/lunch.png' %}">
+     <div class = "container"><div class="img">
+         <img src=""> </div><div class="login-container">
+             <form class="login form" method="POST" name="form" onsubmit="return validated()">
+                {% csrf_token %}
+                <img class="avatar" src="{% static 'images/avatar.png' %}">
+                <h2>Welcome</h2>
+                <div class="input-div one ">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <P><h5><label class="lbl" for="Username">NumberPlate</label></h5></P>
+                        <p class = input>{{form.username}}</p>
+                    </div>
+                </div>
+                <div class="UsernameError" id="username_error">Please fill up your username</div>
+            <div class="input-div two">
+            <div class="i">
+                <i class="fas fa-user"></i>
+            </div>
+            <div>
+            <p><h5>password</h5></p>
+            <p class = "input">{{form.password1}}</p>
+            </div>     
+            </div>
+            <div class="PasswordError" id="password_error">Please fill up your Password</div>
+
+            <div class="input-div three">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>confirm password</h5>
+                        <p class = input>{{form.password2}}</p>
+                    </div>  
+            </div>
+            <div class="PasswordError" id="password_error">Please fill up your Password</div>
+
+         <button type ="submit" class="btn" >Register</button>
+         <a href="{% url 'login' %}">Already have an account?</a>
+            </form>
+        </div>
+        </div>
+ 
+        <script src="{% static 'scripts/script.js' %}"></script>
+    </body>
+
+<script src="{% static 'scripts/script.js' %}"></script>
+{% endblock %}

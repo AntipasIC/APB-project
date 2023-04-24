@@ -1,0 +1,51 @@
+{% extends 'scanbase.html' %}
+{% load static %}
+{% block content %}
+
+
+        <div id="mainbody" align="center">
+            <table class="tbl" border="0" align="center">
+              
+                  
+                <tr>
+                                <td colspan="2" align="center">
+                                    <div id="outdiv">
+                                    </div>
+                                </td>
+                </tr>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <div id="result"></div>
+                    </td>
+                </tr>	
+				{{msg}}	
+				<form action="" method="POST" name="food">
+				{% csrf_token %}
+				<tr class="tbl" height="30px" padding="5px">
+				<td align="left"><label class="lbl"  for="Student">Student:</label></td>
+				<td> <input style="width: 100%;" type="text" name = "student" id= "result"></td>
+				</tr>
+			
+				
+		<tr height="35px" padding="5px" align="center" >
+			<td colspan="2">
+				<input type="image" name="submit" src="{% static 'assets/button.png' %}" onclick = submit>
+				</td>
+ 
+		
+		</tr>
+			</form>
+                    
+                
+                
+            </table>
+            
+        </div>&nbsp;
+     
+    </div>
+    <canvas id="qr-canvas" width="800" height="600"></canvas>
+   
+{% endblock content %}

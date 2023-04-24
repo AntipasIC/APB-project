@@ -1,0 +1,251 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+   font-family: 'poppins',sans-serif;
+   margin:0;
+  }
+  .Transfer input{
+    background-color: rgba(153, 147, 147, 0.815);
+    border: 0px;
+    border-radius: 5px;
+    height: 25px;
+  }
+  .container1{
+    position: relative;
+    margin: 10px; 
+  }
+  .row1{
+    color: #ffffff;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    position: absolute;
+    width: 100%;
+  }
+  .row1 .balance{
+   color:black;
+   text-align: end;
+   margin-right: 50px;
+   padding-bottom: 20px;
+  }
+  .box{
+    background-color: rgba( 0, 0,0, 0.692);
+    height:200px;
+    display: flex;
+    text-align: center;
+    justify-content:space-between ;
+    align-items: center;
+    border-bottom:3px solid rgba(75, 3, 38, 0.801);
+    }
+  
+  .row1 .box .button{
+  display: block;
+  margin-left: 80px;
+  cursor:pointer;
+  background-color: blue;
+  }
+  .box .Username{
+    margin-left: 80px;
+  }    
+  .box .Username h1{
+    font-size: 50px;
+  }
+  .box .Avatar{
+        margin-right: 50px;
+      }
+  .box .Avatar img{
+    height: 200px;
+  }
+  .row2{
+    margin-left: 220px;
+    margin-right: 220px;
+    padding-top: 240px;
+    display: flex;
+   
+  }
+  .transaction{
+    text-align: center;
+    width: 100%;
+    border-radius: 50px;
+    height: 300px;
+    background-color: rgba(235, 228, 228, 0.692);
+    display: absolute;
+    z-index: 1;
+   }
+   .transaction .link{
+     text-align: end;
+     margin-top:0px;
+     margin-right: 45px;
+     display: none;
+   }
+   .transaction a{
+     border: 0px;
+     text-align: end;
+     color: rgb(18, 149, 236);
+   }
+  .transaction h1{
+    padding-bottom: 60px;
+    border-bottom: 3px solid rgba(235, 2, 177, 0.719)
+  }
+  .button1{
+    display: none;
+  }
+  .paynow{
+    margin-right:1300px;
+    width:250px;
+    height: 0px;
+    background-color:black;
+    display:flex;
+  }
+  .container2{
+    width:100%;
+    text-align:center;
+    z-index:10;
+    margin-top: 120px;
+  }
+  .container2.show{
+    display: absolute;
+    -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+          }
+          @-webkit-keyframes fadeIn{
+              from{opacity:0;}
+              to{opacity: 1;}
+          }
+          @keyframes fadeIn{
+              from{opacity: 0;}
+              to{opacity: 1;}
+          }
+  .container2.hide{
+    display: none;
+  }
+  .Transfer{
+    padding-top: 10px;
+    background-color:rgba(247, 244, 231, 0.925);
+    height:300px;
+    border-radius:50px;
+  }
+  .copyright{
+    border-top:1px solid #1d1d27;
+    margin-top: 15px;
+  }
+  .copyright p{
+   color:#838383;
+   text-align:center;
+   font-size:15px;
+  }
+  @media screen and (max-width: 1000px) {
+   .row2{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  }
+  @media screen and (max-width: 700px){
+     
+     .Transfer input{
+       width: 90%;
+     }
+     .container1{
+       margin: 0;
+       text-align: center;
+       width: 100%;
+     }
+    
+     .box {
+       padding-top: 20px;
+       height: 50px;
+       text-align: left;
+       padding-bottom: 20px;
+  
+     }
+     .box .Username{
+       font-size: 10px;
+       text-align: left;
+       margin-left: 40px;
+     }
+     .box .Username h1{
+       font-size: 10px;
+     }
+     .box .Avatar{
+       margin-right: 30px;
+     }
+     .box .Avatar img {
+       height:100px ;
+       
+     }
+    .row1{
+    
+      background-size: 100%;
+      position: relative;
+      height: 200px;
+      width: 95%;
+     margin-left: 10px;
+    }
+    .row1 .balance{
+      padding-bottom: 0;
+     
+    }
+    
+    .row1 .box .button{
+      display: none;
+    }
+    .button1{
+      width: 100%;
+      height:100px ;
+      display: block;
+      text-align:center
+    }
+    .button1 .p{
+         color: #ffffff;
+    }
+    .button1 img{
+     text-align: center;
+      color: #ffffff;
+      border: 0px; 
+      margin-top: 10px;
+      height: 85px;
+      width:100px;
+      cursor: pointer;
+    }
+    .row2{
+    color: black;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: relative;
+    height: 200px;
+    }
+    .transaction{
+      display: relative;
+      z-index: 0;
+      height: 100%;
+    }
+    .transaction h1{
+       padding-bottom: 10px;
+       font-size: 20px;
+    }
+    .transaction .link{
+     text-align: end;
+     margin-top:0px;
+     margin-right: 35px;
+   }
+    .row1 .balance{
+        text-align: left;
+        padding-left: 50px;
+        width: 90%;
+        font-size: 10px;
+      }
+      .paynow{
+        color: #000000;
+        width: 100%;
+      }
+      .container2{
+        margin-top: 50pxpx;
+        padding-left: 10px;
+        padding-right: 10px;}
+   .copyright{
+           
+              margin-top: 20px;
+  }
+      }
