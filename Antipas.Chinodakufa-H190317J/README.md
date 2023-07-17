@@ -21,7 +21,7 @@ To install this project, you need to have Python 3.8 or higher, and pip installe
 
 Follow these steps to install this project:
 
-1. Clone this repository to your local machine: `git clone https://github.com/antipasic/APB.git`
+1. Clone this repository to your local machine: `git clone https://github.com/antipasic/APB-project.git`
 2. Navigate to the project folder: `cd APB`
 
 for PARKPAY and APB DASHBOARD
@@ -57,7 +57,7 @@ To run the tests, navigate to the project folder and run: `pytest`
 
 The tests will cover the models, views, forms, and templates of the app. They will also check the code quality and style using flake8 and black.
 
-To report any bugs or issues, please use the project's issue tracker: https://github.com/antipasic/APB/issues
+To report any bugs or issues, please use the project's issue tracker: https://github.com/antipasic/APB-project/issues
 
 # Contributing
 No contributions allowed yet!
